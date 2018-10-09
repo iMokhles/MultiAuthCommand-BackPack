@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    @include('{{$nameSmall}}.inc.head')
+</head>
+<body class="hold-transition @yield('body_attributes')">
+
+@yield('login-box')
+
+@include('{{$nameSmall}}.inc.footer_guest')
+
+@yield('before_scripts')
+@stack('before_scripts')
+
+@include('{{$nameSmall}}.inc.scripts')
+
+@include('{{$nameSmall}}.inc.alerts')
+
+@yield('after_scripts')
+@stack('after_scripts')
+
+<!-- JavaScripts -->
+{{-- <script src="{{ mix('js/app.js') }}"></script> --}}
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "name": "imokhles/multi-backpack",
+  "description": "create laravel multi-auth files, middleware, models, migrations etc with backpack",
+  "keywords": [
+    "laravel",
+    "laravel multiauth",
+    "laravel multi-auth",
+    "laravel multiple authentication"
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "illuminate/support": "~5.7",
+    "prologue/alerts": "^0.4.1",
+    "backpack/crud": "^3.4"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "iMokhles",
+      "email": "mokhleshussien@aol.com",
+      "homepage": "https://imokhles.com",
+      "role": "Software Developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "iMokhles\\MultiAuthBackPack\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "iMokhles\\MultiAuthBackPack\\MultiAuthBackPackServiceProvider"
+      ]
+    }
+  }
+}
