@@ -8,6 +8,18 @@
 
 create multi authentication guards with backpack panel
 
+## Before Install
+
+1. install Backpack CRUD/Base by following this Doc [Backpack-Installation](https://backpackforlaravel.com/docs/3.4/installation)
+2. go to `config/backpack/base.php` and apply the following changes
+
+* `route_prefix => '' ( emove it's value should be empty )`
+* `setup_auth_routes => true ( make it false)`
+* `setup_dashboard_routes => true ( make it false)`
+* `setup_my_account_routes => true ( make it false )`
+* `user_model_fqn => '' ( remove it's value should be empty )`
+* `middleware_class => '' ( remove it's value should be empty )`
+
 ## Install
 
 1. In your terminal via composer:
