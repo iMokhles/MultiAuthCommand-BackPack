@@ -344,9 +344,9 @@ class MultiAuthPrepare extends BaseCommand
                 $sidebar_user_panelBlade = file_get_contents(__DIR__
                     . '/../Backpack/Views/'.$theme_name.'/inc/user_menu.blade.stub');
                 $breadcrumbBlade = file_get_contents(__DIR__
-                    . '/../Backpack/Views/'.$theme_name.'/auth/account/breadcrumb.blade.stub');
+                    . '/../Backpack/Views/'.$theme_name.'/auth/inc/breadcrumb.blade.stub');
                 $notifications_menuBlade = file_get_contents(__DIR__
-                    . '/../Backpack/Views/'.$theme_name.'/auth/account/notifications_menu.blade.stub');
+                    . '/../Backpack/Views/'.$theme_name.'/auth/inc/notifications_menu.blade.stub');
             }
 
 

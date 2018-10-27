@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aab6125-e647-48c9-8846-0b8fdd0280ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +44,7 @@
         <counts>
           <entry key="json" value="35" />
           <entry key="md" value="317" />
-          <entry key="php" value="664" />
+          <entry key="php" value="667" />
           <entry key="stub" value="484" />
         </counts>
       </usages-collector>
@@ -54,7 +53,7 @@
           <entry key="Blade" value="482" />
           <entry key="JSON" value="35" />
           <entry key="Markdown" value="317" />
-          <entry key="PHP" value="665" />
+          <entry key="PHP" value="668" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -65,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="136" column="13" lean-forward="true" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
+            <state relative-caret-position="207">
+              <caret line="459" column="16" lean-forward="true" selection-start-line="459" selection-start-column="16" selection-end-line="459" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -116,6 +115,7 @@
       <find>installView</find>
       <find>account_infoBlade</find>
       <find>theme_name</find>
+      <find>bread</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -313,12 +313,12 @@
       <updated>1539077339005</updated>
       <workItem from="1539077340693" duration="3186000" />
       <workItem from="1540357390514" duration="639000" />
-      <workItem from="1540661052571" duration="13035000" />
+      <workItem from="1540661052571" duration="13262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16860000" />
+    <option name="totallyTimeSpent" value="17087000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -610,8 +610,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="136" column="13" lean-forward="true" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
+        <state relative-caret-position="207">
+          <caret line="459" column="16" lean-forward="true" selection-start-line="459" selection-start-column="16" selection-end-line="459" selection-end-column="16" />
         </state>
       </provider>
     </entry>
