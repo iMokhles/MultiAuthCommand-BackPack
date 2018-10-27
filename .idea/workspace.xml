@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aab6125-e647-48c9-8846-0b8fdd0280ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/imokhles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/account/account_info.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/account/change_password.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/account/sidemenu.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/account/update_info.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/login.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/passwords/email.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/passwords/reset.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/register.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/verify.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/home.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/alerts.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/breadcrumb.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/footer.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/footer_guest.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/head.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/main_header.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/notifications_menu.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/scripts.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/sidebar.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/user_menu.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/layouts/layout.blade.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/layouts/layout_guest.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +27,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="1" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="php" value="6" />
           <entry key="stub" value="54" />
         </counts>
@@ -60,7 +36,7 @@
         <counts>
           <entry key="Blade" value="48" />
           <entry key="JSON" value="1" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="PHP" value="6" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
@@ -68,8 +44,8 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="35" />
-          <entry key="md" value="285" />
-          <entry key="php" value="603" />
+          <entry key="md" value="317" />
+          <entry key="php" value="625" />
           <entry key="stub" value="484" />
         </counts>
       </usages-collector>
@@ -77,8 +53,8 @@
         <counts>
           <entry key="Blade" value="482" />
           <entry key="JSON" value="35" />
-          <entry key="Markdown" value="285" />
-          <entry key="PHP" value="604" />
+          <entry key="Markdown" value="317" />
+          <entry key="PHP" value="626" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -89,8 +65,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+            <state relative-caret-position="166">
+              <caret line="286" column="57" lean-forward="true" selection-start-line="286" selection-start-column="57" selection-end-line="286" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="306">
+                <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -139,7 +127,6 @@
         <option value="$PROJECT_DIR$/Command/MultiAuthPrepare.php" />
         <option value="$PROJECT_DIR$/MultiAuthCommandServiceProvider.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/AdminLTE/inc/main_header.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/sidebar.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/user_menu.blade.stub" />
@@ -164,6 +151,7 @@
         <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/account/change_password.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/account/account_info.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/footer_guest.blade.stub" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
       </list>
     </option>
@@ -322,12 +310,12 @@
       <updated>1539077339005</updated>
       <workItem from="1539077340693" duration="3186000" />
       <workItem from="1540357390514" duration="639000" />
-      <workItem from="1540661052571" duration="10768000" />
+      <workItem from="1540661052571" duration="11020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14593000" />
+    <option name="totallyTimeSpent" value="14845000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -342,7 +330,7 @@
     <frame x="52" y="23" width="1388" height="817" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25705793" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25705793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -355,7 +343,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32965517" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -376,16 +364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="34" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="12" column="129" selection-start-line="12" selection-end-line="13" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -617,10 +595,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+        <state relative-caret-position="166">
+          <caret line="286" column="57" lean-forward="true" selection-start-line="286" selection-start-column="57" selection-end-line="286" selection-end-column="57" />
         </state>
       </provider>
     </entry>

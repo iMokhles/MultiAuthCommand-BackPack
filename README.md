@@ -39,7 +39,7 @@ Example usage:
 
 
 ``` bash
-php artisan make:multi-backpack Admin
+php artisan make:multi-backpack Admin --admin_theme="adminox" or --admin_theme="adminlte"
 ```
 
 ## Security

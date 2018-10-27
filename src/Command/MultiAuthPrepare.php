@@ -282,265 +282,268 @@ class MultiAuthPrepare extends BaseCommand
      */
     public function installView($theme_name = 'adminlte')
     {
-        $nameSmall = snake_case($this->getParsedNameInput());
-        $name = ucfirst($this->getParsedNameInput());
+        if (file_exists(__DIR__ . '/../Backpack/Views/'.$theme_name)) {
+            $nameSmall = snake_case($this->getParsedNameInput());
+            $name = ucfirst($this->getParsedNameInput());
 
-        // layouts
-        $appBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/layouts/layout.blade.stub');
-        $appGuestBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/layouts/layout_guest.blade.stub');
+            // layouts
+            $appBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/layouts/layout.blade.stub');
+            $appGuestBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/layouts/layout_guest.blade.stub');
 
-        // home
-        $homeBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/home.blade.stub');
+            // home
+            $homeBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/home.blade.stub');
 
-        // auth
-        $loginBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/auth/login.blade.stub');
-        $registerBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/auth/register.blade.stub');
-        $verifyEmailBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/auth/verify.blade.stub');
+            // auth
+            $loginBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/auth/login.blade.stub');
+            $registerBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/auth/register.blade.stub');
+            $verifyEmailBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/auth/verify.blade.stub');
 
-        // auth/passwords
-        $resetBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/auth/passwords/reset.blade.stub');
-        $emailBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/auth/passwords/email.blade.stub');
+            // auth/passwords
+            $resetBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/auth/passwords/reset.blade.stub');
+            $emailBlade = file_get_contents(__DIR__ . '/../Backpack/Views/'.$theme_name.'/auth/passwords/email.blade.stub');
 
-        // auth/account
-        $update_infoBlade = file_get_contents(__DIR__
-            . '/../Backpack/Views/'.$theme_name.'/auth/account/update_info.blade.stub');
-        $change_passwordBlade = file_get_contents(__DIR__
-            . '/../Backpack/Views/'.$theme_name.'/auth/account/change_password.blade.stub');
-        $sidemenuBlade = file_get_contents(__DIR__
-            . '/../Backpack/Views/'.$theme_name.'/auth/account/sidemenu.blade.stub');
+            // auth/account
+            $update_infoBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/'.$theme_name.'/auth/account/update_info.blade.stub');
+            $change_passwordBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/'.$theme_name.'/auth/account/change_password.blade.stub');
+            $sidemenuBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/'.$theme_name.'/auth/account/sidemenu.blade.stub');
 
-        // inc
-        $main_headerBlade = file_get_contents(__DIR__
-            . '/../Backpack/Views/'.$theme_name.'/inc/main_header.blade.stub');
-        $sidebarBlade = file_get_contents(__DIR__
-            . '/../Backpack/Views/'.$theme_name.'/inc/sidebar.blade.stub');
-        $alertsBlade = file_get_contents(__DIR__
-            . '/../Backpack/Views/'.$theme_name.'/inc/alerts.blade.stub');
-        $footerBlade = file_get_contents(__DIR__
-            . '/../Backpack/Views/'.$theme_name.'/inc/footer.blade.stub');
-        $footerGuestBlade = file_get_contents(__DIR__
-            . '/../Backpack/Views/'.$theme_name.'/inc/footer_guest.blade.stub');
-        $headBlade = file_get_contents(__DIR__
-            . '/../Backpack/Views/'.$theme_name.'/inc/head.blade.stub');
-        $scriptsBlade = file_get_contents(__DIR__
-            . '/../Backpack/Views/'.$theme_name.'/inc/scripts.blade.stub');
+            // inc
+            $main_headerBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/'.$theme_name.'/inc/main_header.blade.stub');
+            $sidebarBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/'.$theme_name.'/inc/sidebar.blade.stub');
+            $alertsBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/'.$theme_name.'/inc/alerts.blade.stub');
+            $footerBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/'.$theme_name.'/inc/footer.blade.stub');
+            $footerGuestBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/'.$theme_name.'/inc/footer_guest.blade.stub');
+            $headBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/'.$theme_name.'/inc/head.blade.stub');
+            $scriptsBlade = file_get_contents(__DIR__
+                . '/../Backpack/Views/'.$theme_name.'/inc/scripts.blade.stub');
 
-        if ($theme_name == 'adminlte') {
-            $menuBlade = file_get_contents(__DIR__
-                . '/../Backpack/Views/'.$theme_name.'/inc/menu.blade.stub');
-            $sidebar_user_panelBlade = file_get_contents(__DIR__
-                . '/../Backpack/Views/'.$theme_name.'/inc/sidebar_user_panel.blade.stub');
-            // style
-            $authCSS = file_get_contents(__DIR__
-                . '/../Backpack/Views/'.$theme_name.'/style/backpack_auth_css.blade.stub');
-        } else {
-            $account_infoBlade = file_get_contents(__DIR__
-                . '/../Backpack/Views/'.$theme_name.'/auth/account/account_info.blade.stub');
-            $sidebar_user_panelBlade = file_get_contents(__DIR__
-                . '/../Backpack/Views/'.$theme_name.'/inc/user_menu.blade.stub');
-            $breadcrumbBlade = file_get_contents(__DIR__
-                . '/../Backpack/Views/'.$theme_name.'/auth/account/breadcrumb.blade.stub');
-            $notifications_menuBlade = file_get_contents(__DIR__
-                . '/../Backpack/Views/'.$theme_name.'/auth/account/notifications_menu.blade.stub');
-        }
-
-
+            if ($theme_name == 'adminlte') {
+                $menuBlade = file_get_contents(__DIR__
+                    . '/../Backpack/Views/'.$theme_name.'/inc/menu.blade.stub');
+                $sidebar_user_panelBlade = file_get_contents(__DIR__
+                    . '/../Backpack/Views/'.$theme_name.'/inc/sidebar_user_panel.blade.stub');
+                // style
+                $authCSS = file_get_contents(__DIR__
+                    . '/../Backpack/Views/'.$theme_name.'/style/backpack_auth_css.blade.stub');
+            } else {
+                $account_infoBlade = file_get_contents(__DIR__
+                    . '/../Backpack/Views/'.$theme_name.'/auth/account/account_info.blade.stub');
+                $sidebar_user_panelBlade = file_get_contents(__DIR__
+                    . '/../Backpack/Views/'.$theme_name.'/inc/user_menu.blade.stub');
+                $breadcrumbBlade = file_get_contents(__DIR__
+                    . '/../Backpack/Views/'.$theme_name.'/auth/account/breadcrumb.blade.stub');
+                $notifications_menuBlade = file_get_contents(__DIR__
+                    . '/../Backpack/Views/'.$theme_name.'/auth/account/notifications_menu.blade.stub');
+            }
 
 
-        $createFolder = $this->getViewsFolderPath().DIRECTORY_SEPARATOR."$nameSmall";
-        if (!file_exists($createFolder)) {
-            mkdir($createFolder);
-        }
 
-        $createFolderLayouts = $this->getViewsFolderPath().DIRECTORY_SEPARATOR
-            ."$nameSmall"
-            .DIRECTORY_SEPARATOR."layouts";
-        if (!file_exists($createFolderLayouts)) {
-            mkdir($createFolderLayouts);
-        }
 
-        $createFolderStyle = $this->getViewsFolderPath().DIRECTORY_SEPARATOR
-            ."$nameSmall"
-            .DIRECTORY_SEPARATOR."style";
-        if (!file_exists($createFolderStyle)) {
-            mkdir($createFolderStyle);
-        }
+            $createFolder = $this->getViewsFolderPath().DIRECTORY_SEPARATOR."$nameSmall";
+            if (!file_exists($createFolder)) {
+                mkdir($createFolder);
+            }
 
-        $createFolderInc = $this->getViewsFolderPath().DIRECTORY_SEPARATOR
-            ."$nameSmall"
-            .DIRECTORY_SEPARATOR."inc";
-        if (!file_exists($createFolderInc)) {
-            mkdir($createFolderInc);
-        }
+            $createFolderLayouts = $this->getViewsFolderPath().DIRECTORY_SEPARATOR
+                ."$nameSmall"
+                .DIRECTORY_SEPARATOR."layouts";
+            if (!file_exists($createFolderLayouts)) {
+                mkdir($createFolderLayouts);
+            }
 
-        $createFolderAuth = $this->getViewsFolderPath().DIRECTORY_SEPARATOR."$nameSmall"
-            .DIRECTORY_SEPARATOR."auth";
-        if (!file_exists($createFolderAuth)) {
-            mkdir($createFolderAuth);
-        }
+            $createFolderStyle = $this->getViewsFolderPath().DIRECTORY_SEPARATOR
+                ."$nameSmall"
+                .DIRECTORY_SEPARATOR."style";
+            if (!file_exists($createFolderStyle)) {
+                mkdir($createFolderStyle);
+            }
 
-        $createFolderAuthPasswords = $this->getViewsFolderPath().DIRECTORY_SEPARATOR.
-            "$nameSmall".DIRECTORY_SEPARATOR
-            ."auth".DIRECTORY_SEPARATOR."passwords";
-        if (!file_exists($createFolderAuthPasswords)) {
-            mkdir($createFolderAuthPasswords);
-        }
+            $createFolderInc = $this->getViewsFolderPath().DIRECTORY_SEPARATOR
+                ."$nameSmall"
+                .DIRECTORY_SEPARATOR."inc";
+            if (!file_exists($createFolderInc)) {
+                mkdir($createFolderInc);
+            }
 
-        $createFolderAuthAccount = $this->getViewsFolderPath().DIRECTORY_SEPARATOR.
-            "$nameSmall".DIRECTORY_SEPARATOR
-            ."auth".DIRECTORY_SEPARATOR."account";
-        if (!file_exists($createFolderAuthAccount)) {
-            mkdir($createFolderAuthAccount);
-        }
+            $createFolderAuth = $this->getViewsFolderPath().DIRECTORY_SEPARATOR."$nameSmall"
+                .DIRECTORY_SEPARATOR."auth";
+            if (!file_exists($createFolderAuth)) {
+                mkdir($createFolderAuth);
+            }
 
-        $headBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall
-        ], $headBlade);
+            $createFolderAuthPasswords = $this->getViewsFolderPath().DIRECTORY_SEPARATOR.
+                "$nameSmall".DIRECTORY_SEPARATOR
+                ."auth".DIRECTORY_SEPARATOR."passwords";
+            if (!file_exists($createFolderAuthPasswords)) {
+                mkdir($createFolderAuthPasswords);
+            }
 
-        $appBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall
-        ], $appBlade);
+            $createFolderAuthAccount = $this->getViewsFolderPath().DIRECTORY_SEPARATOR.
+                "$nameSmall".DIRECTORY_SEPARATOR
+                ."auth".DIRECTORY_SEPARATOR."account";
+            if (!file_exists($createFolderAuthAccount)) {
+                mkdir($createFolderAuthAccount);
+            }
 
-        $appGuestBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall
-        ], $appGuestBlade);
+            $headBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $headBlade);
 
-        $verifyEmailBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall
-        ], $verifyEmailBlade);
+            $appBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $appBlade);
 
-        $homeBladeNew = str_replace([
-            '{{$nameSmall}}',
-            '{{$name}}',
+            $appGuestBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $appGuestBlade);
 
-        ], [
-            $nameSmall
-        ], $homeBlade);
+            $verifyEmailBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $verifyEmailBlade);
 
-        $loginBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall
-        ], $loginBlade);
+            $homeBladeNew = str_replace([
+                '{{$nameSmall}}',
+                '{{$name}}',
 
-        $registerBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall
-        ], $registerBlade);
+            ], [
+                $nameSmall
+            ], $homeBlade);
 
-        $emailBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall
-        ], $emailBlade);
+            $loginBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $loginBlade);
 
-        $resetBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall
-        ], $resetBlade);
+            $registerBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $registerBlade);
 
-        $update_infoBladeNew = str_replace([
-            '{{$nameSmall}}',
-            '{{$name}}',
-        ], [
-            $nameSmall,
-            $name
-        ], $update_infoBlade);
+            $emailBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $emailBlade);
 
-        $change_passwordBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall,
-        ], $change_passwordBlade);
+            $resetBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $resetBlade);
 
-        if ($theme_name != 'adminlte') {
-            $account_infoBladeNew = str_replace([
+            $update_infoBladeNew = str_replace([
+                '{{$nameSmall}}',
+                '{{$name}}',
+            ], [
+                $nameSmall,
+                $name
+            ], $update_infoBlade);
+
+            $change_passwordBladeNew = str_replace([
                 '{{$nameSmall}}',
             ], [
                 $nameSmall,
-            ], $account_infoBlade);
+            ], $change_passwordBlade);
+
+            if ($theme_name != 'adminlte') {
+                $account_infoBladeNew = str_replace([
+                    '{{$nameSmall}}',
+                ], [
+                    $nameSmall,
+                ], $account_infoBlade);
+            }
+
+
+
+            $sidemenuBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $sidemenuBlade);
+
+            $main_headerBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $main_headerBlade);
+
+            $menuBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $menuBlade);
+
+            $sidebarBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $sidebarBlade);
+
+            $sidebar_user_panelBladeNew = str_replace([
+                '{{$nameSmall}}',
+            ], [
+                $nameSmall
+            ], $sidebar_user_panelBlade);
+
+
+            file_put_contents($createFolderLayouts.'/layout.blade.php', $appBladeNew);
+            file_put_contents($createFolderLayouts.'/layout_guest.blade.php', $appGuestBladeNew);
+            file_put_contents($createFolder.'/home.blade.php', $homeBladeNew);
+
+
+            file_put_contents($createFolderInc.'/main_header.blade.php', $main_headerBladeNew);
+            file_put_contents($createFolderInc.'/sidebar.blade.php', $sidebarBladeNew);
+
+            file_put_contents($createFolderInc.'/alerts.blade.php', $alertsBlade);
+            file_put_contents($createFolderInc.'/footer.blade.php', $footerBlade);
+            file_put_contents($createFolderInc.'/footer_guest.blade.php', $footerGuestBlade);
+            file_put_contents($createFolderInc.'/head.blade.php', $headBladeNew);
+            file_put_contents($createFolderInc.'/scripts.blade.php', $scriptsBlade);
+
+            file_put_contents($createFolderAuth.'/login.blade.php', $loginBladeNew);
+            file_put_contents($createFolderAuth.'/verify.blade.php', $verifyEmailBladeNew);
+            file_put_contents($createFolderAuth.'/register.blade.php', $registerBladeNew);
+            file_put_contents($createFolderAuthPasswords.'/email.blade.php', $emailBladeNew);
+            file_put_contents($createFolderAuthPasswords.'/reset.blade.php', $resetBladeNew);
+
+            file_put_contents($createFolderAuthAccount.'/sidemenu.blade.php', $sidemenuBladeNew);
+            file_put_contents($createFolderAuthAccount.'/update_info.blade.php', $update_infoBladeNew);
+            file_put_contents($createFolderAuthAccount.'/change_password.blade.php', $change_passwordBladeNew);
+
+            if ($theme_name == 'adminlte') {
+                file_put_contents($createFolderStyle.'/backpack_auth_css.blade.php', $authCSS);
+                file_put_contents($createFolderInc.'/menu.blade.php', $menuBladeNew);
+                file_put_contents($createFolderInc.'/sidebar_user_panel.blade.php', $sidebar_user_panelBladeNew);
+            } else {
+                file_put_contents($createFolderAuthAccount.'/account_info.blade.php', $account_infoBladeNew);
+                file_put_contents($createFolderInc.'/user_menu.blade.php', $sidebar_user_panelBladeNew);
+                file_put_contents($createFolderInc.'/breadcrumb.blade.php', $breadcrumbBlade);
+                file_put_contents($createFolderInc.'/notifications_menu.blade.php', $notifications_menuBlade);
+            }
+
+
+            return true;
         }
-
-
-
-        $sidemenuBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall
-        ], $sidemenuBlade);
-
-        $main_headerBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall
-        ], $main_headerBlade);
-
-        $menuBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall
-        ], $menuBlade);
-
-        $sidebarBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall
-        ], $sidebarBlade);
-
-        $sidebar_user_panelBladeNew = str_replace([
-            '{{$nameSmall}}',
-        ], [
-            $nameSmall
-        ], $sidebar_user_panelBlade);
-
-
-        file_put_contents($createFolderLayouts.'/layout.blade.php', $appBladeNew);
-        file_put_contents($createFolderLayouts.'/layout_guest.blade.php', $appGuestBladeNew);
-        file_put_contents($createFolder.'/home.blade.php', $homeBladeNew);
-
-
-        file_put_contents($createFolderInc.'/main_header.blade.php', $main_headerBladeNew);
-        file_put_contents($createFolderInc.'/sidebar.blade.php', $sidebarBladeNew);
-
-        file_put_contents($createFolderInc.'/alerts.blade.php', $alertsBlade);
-        file_put_contents($createFolderInc.'/footer.blade.php', $footerBlade);
-        file_put_contents($createFolderInc.'/footer_guest.blade.php', $footerGuestBlade);
-        file_put_contents($createFolderInc.'/head.blade.php', $headBladeNew);
-        file_put_contents($createFolderInc.'/scripts.blade.php', $scriptsBlade);
-
-        file_put_contents($createFolderAuth.'/login.blade.php', $loginBladeNew);
-        file_put_contents($createFolderAuth.'/verify.blade.php', $verifyEmailBladeNew);
-        file_put_contents($createFolderAuth.'/register.blade.php', $registerBladeNew);
-        file_put_contents($createFolderAuthPasswords.'/email.blade.php', $emailBladeNew);
-        file_put_contents($createFolderAuthPasswords.'/reset.blade.php', $resetBladeNew);
-
-        file_put_contents($createFolderAuthAccount.'/sidemenu.blade.php', $sidemenuBladeNew);
-        file_put_contents($createFolderAuthAccount.'/update_info.blade.php', $update_infoBladeNew);
-        file_put_contents($createFolderAuthAccount.'/change_password.blade.php', $change_passwordBladeNew);
-
-        if ($theme_name == 'adminlte') {
-            file_put_contents($createFolderStyle.'/backpack_auth_css.blade.php', $authCSS);
-            file_put_contents($createFolderInc.'/menu.blade.php', $menuBladeNew);
-            file_put_contents($createFolderInc.'/sidebar_user_panel.blade.php', $sidebar_user_panelBladeNew);
-        } else {
-            file_put_contents($createFolderAuthAccount.'/account_info.blade.php', $account_infoBladeNew);
-            file_put_contents($createFolderInc.'/user_menu.blade.php', $sidebar_user_panelBladeNew);
-            file_put_contents($createFolderInc.'/breadcrumb.blade.php', $breadcrumbBlade);
-            file_put_contents($createFolderInc.'/notifications_menu.blade.php', $notifications_menuBlade);
-        }
-
-
-        return true;
+        return false;
 
     }
 
