@@ -490,11 +490,14 @@ class MultiAuthPrepare extends BaseCommand
                 $nameSmall
             ], $main_headerBlade);
 
-            $menuBladeNew = str_replace([
-                '{{$nameSmall}}',
-            ], [
-                $nameSmall
-            ], $menuBlade);
+            if ($theme_name == 'adminlte') {
+                $menuBladeNew = str_replace([
+                    '{{$nameSmall}}',
+                ], [
+                    $nameSmall
+                ], $menuBlade);
+            }
+
 
             $sidebarBladeNew = str_replace([
                 '{{$nameSmall}}',

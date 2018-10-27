@@ -44,7 +44,7 @@
         <counts>
           <entry key="json" value="35" />
           <entry key="md" value="317" />
-          <entry key="php" value="667" />
+          <entry key="php" value="670" />
           <entry key="stub" value="484" />
         </counts>
       </usages-collector>
@@ -53,7 +53,7 @@
           <entry key="Blade" value="482" />
           <entry key="JSON" value="35" />
           <entry key="Markdown" value="317" />
-          <entry key="PHP" value="668" />
+          <entry key="PHP" value="671" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -64,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="348" column="57" selection-start-line="348" selection-start-column="57" selection-end-line="348" selection-end-column="57" />
+            <state relative-caret-position="241">
+              <caret line="497" column="31" selection-start-line="497" selection-start-column="31" selection-end-line="497" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -86,6 +86,10 @@
       <find>account_infoBlade</find>
       <find>theme_name</find>
       <find>bread</find>
+      <find>menuBlade</find>
+      <find>$account_infoBlade</find>
+      <find>$authCSS</find>
+      <find>$menuBlade</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -234,12 +238,12 @@
       <updated>1539077339005</updated>
       <workItem from="1539077340693" duration="3186000" />
       <workItem from="1540357390514" duration="639000" />
-      <workItem from="1540661052571" duration="13708000" />
+      <workItem from="1540661052571" duration="14240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17533000" />
+    <option name="totallyTimeSpent" value="18065000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -254,7 +258,7 @@
     <frame x="52" y="23" width="1388" height="817" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25705793" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25705793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -267,7 +271,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32965517" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32965517" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -537,8 +541,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="348" column="57" selection-start-line="348" selection-start-column="57" selection-end-line="348" selection-end-column="57" />
+        <state relative-caret-position="241">
+          <caret line="497" column="31" selection-start-line="497" selection-start-column="31" selection-end-line="497" selection-end-column="31" />
         </state>
       </provider>
     </entry>
