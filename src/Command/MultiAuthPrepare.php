@@ -20,7 +20,7 @@ class MultiAuthPrepare extends BaseCommand
      *
      * @var string
      */
-    protected $signature = 'make:multi-backpack {name} {--admin_theme= : chose the theme you want';
+    protected $signature = 'make:multi-backpack {name} {--admin_theme= : chose the theme you want}';
 
     /**
      * The console command description.
