@@ -77,65 +77,69 @@ class MultiAuthPrepare extends BaseCommand
             $admin_theme = 'adminlte';
         }
 
-        if ($this->isAlreadySetup() == false) {
+        if (file_exists(__DIR__ . '/../Backpack/Views/'.$theme_name)) {
+            if ($this->isAlreadySetup() == false) {
 
-            $this->line(" installing migrations...");
-            $this->installMigration();
-            $this->progressBar->advance();
+                $this->line(" installing migrations...");
+                $this->installMigration();
+                $this->progressBar->advance();
 
-            $this->line(" installing models...");
-            $this->installModel();
-            $this->progressBar->advance();
+                $this->line(" installing models...");
+                $this->installModel();
+                $this->progressBar->advance();
 
-            $this->line(" installing route maps...");
-            $this->installRouteMaps();
-            $this->progressBar->advance();
+                $this->line(" installing route maps...");
+                $this->installRouteMaps();
+                $this->progressBar->advance();
 
-            $this->line(" installing route files...");
-            $this->installRouteFiles();
-            $this->progressBar->advance();
+                $this->line(" installing route files...");
+                $this->installRouteFiles();
+                $this->progressBar->advance();
 
-            $this->line(" installing controllers...");
-            $this->installControllers();
-            $this->progressBar->advance();
+                $this->line(" installing controllers...");
+                $this->installControllers();
+                $this->progressBar->advance();
 
-            $this->line(" installing requests...");
-            $this->installRequests();
-            $this->progressBar->advance();
+                $this->line(" installing requests...");
+                $this->installRequests();
+                $this->progressBar->advance();
 
-            $this->line(" installing configs...");
-            $this->installConfigs();
-            $this->progressBar->advance();
+                $this->line(" installing configs...");
+                $this->installConfigs();
+                $this->progressBar->advance();
 
-            $this->line(" installing middleware...");
-            $this->installMiddleware();
-            $this->progressBar->advance();
+                $this->line(" installing middleware...");
+                $this->installMiddleware();
+                $this->progressBar->advance();
 
-            $this->line(" installing unauthenticated function...");
-            $this->installUnauthenticated();
-            $this->progressBar->advance();
+                $this->line(" installing unauthenticated function...");
+                $this->installUnauthenticated();
+                $this->progressBar->advance();
 
-            $this->line(" installing views...");
-            $this->installView($admin_theme);
-            $this->progressBar->advance();
+                $this->line(" installing views...");
+                $this->installView($admin_theme);
+                $this->progressBar->advance();
 
-            $this->line(" installing prologue alert...");
-            $this->installPrologueAlert();
-            $this->progressBar->advance();
+                $this->line(" installing prologue alert...");
+                $this->installPrologueAlert();
+                $this->progressBar->advance();
 
-            $this->line(" dump autoload...");
-            $this->composer->dumpAutoloads();
-            $this->progressBar->advance();
+                $this->line(" dump autoload...");
+                $this->composer->dumpAutoloads();
+                $this->progressBar->advance();
 
-            $this->progressBar->finish();
-            $this->info(" finished ".$name." setup with Backpack panel.");
+                $this->progressBar->finish();
+                $this->info(" finished ".$name." setup with Backpack panel.");
+            } else {
+                $this->progressBar->finish();
+                $this->line(" failed. already setup for: ".$name);
+                $this->progressBar->advance();
+            }
         } else {
             $this->progressBar->finish();
-            $this->line(" failed. already setup for: ".$name);
+            $this->line(" failed: ".$theme_name." theme not found");
             $this->progressBar->advance();
         }
-
-
 
 
         return true;
