@@ -1,0 +1,77 @@
+@extends('{{$nameSmall}}.layouts.layout_guest')
+
+
+@section('content')
+
+    <div class="account-pages">
+        <div class="account-box">
+            <div class="account-logo-box">
+                <h2 class="text-uppercase text-center">
+                    <a href="{{url('')}}" class="logo">
+                        {{config('backpack.base.project_name')}}
+                    </a>
+                </h2>
+                <h5 class="text-uppercase font-bold m-b-5 m-t-50">{{ trans('backpack::base.login') }}</h5>
+                <p class="m-b-0">{{ trans('backpack::base.login') }} to your Admin account</p>
+            </div>
+            <div class="account-content">
+                <form class="form-horizontal" method="POST" action="{{ route('{{$nameSmall}}.login') }}">
+
+                    @csrf
+
+
+                    <div class="form-group m-b-20 row">
+                        <div class="col-12">
+                            <label for="emailaddress">{{ config('backpack.base.authentication_column_name') }}</label>
+                            <input type="text" class="form-control" name="{{ $username }}" id="{{ $username }}" value="{{ old($username) }}">
+                        </div>
+                    </div>
+
+                    <div class="form-group row m-b-20">
+                        <div class="col-12">
+                            @if (backpack_users_have_email())
+                                <a href="{{ route('{{$nameSmall}}.password.reset') }}" class="text-muted pull-right"><small>{{ trans('backpack::base.forgot_your_password') }}</small></a>
+                            @endif
+                            <label for="password">{{ trans('backpack::base.password') }}</label>
+                            <input type="password" class="form-control" name="password" id="password">
+                        </div>
+                    </div>
+
+                    <div class="form-group row m-b-20">
+                        <div class="col-12">
+
+                            <div class="checkbox checkbox-success">
+                                <input id="remember" type="checkbox">
+                                <label for="remember">
+                                    {{ trans('backpack::base.remember_me') }}
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group row text-center m-t-10">
+                        <div class="col-12">
+                            <button class="btn btn-md btn-block btn-primary waves-effect waves-light" type="submit">{{ trans('backpack::base.login') }}</button>
+                        </div>
+                    </div>
+
+                </form>
+
+                @if (config('backpack.base.registration_open'))
+                    <div class="row m-t-50">
+                        <div class="col-sm-12 text-center">
+                            <p class="text-muted">Don't have an account? <a href="{{ route('{{$nameSmall}}.register') }}" class="text-dark m-l-5"><b>{{ trans('backpack::base.register') }}</b></a></p>
+                        </div>
+                    </div>
+                @endif
+
+
+            </div>
+        </div>
+    </div>
+    <!-- end card-box-->
+
+@endsection
+
+

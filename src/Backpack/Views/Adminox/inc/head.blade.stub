@@ -1,0 +1,34 @@
+<meta charset="utf-8" />
+<title>{{ isset($title) ? $title.' :: '.config('backpack.base.project_name').' Admin' : config('backpack.base.project_name').' Admin' }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+@if (config('backpack.base.meta_robots_content'))
+    <meta name="robots" content="{{ config('backpack.base.meta_robots_content', 'noindex, nofollow') }}">
+@endif
+<meta content="{{ isset($p_description) ? $p_description : config('backpack.base.p_description') }}" name="description" />
+<meta content="{{ isset($p_author) ? $p_author : config('backpack.base.p_author') }}" name="author" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link rel="shortcut icon" href="{{ asset('adminox') }}/assets/images/favicon.ico">
+
+@yield('before_styles')
+@stack('before_styles')
+
+<!-- Toastr css -->
+<link href="{{ asset('adminox') }}/plugins/jquery-toastr/jquery.toast.min.css" rel="stylesheet" />
+
+
+<!-- DataTables -->
+<link href="{{ asset('adminox') }}/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+<link href="{{ asset('adminox') }}/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+<!-- Responsive datatable examples -->
+<link href="{{ asset('adminox') }}/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+<!-- App css -->
+<link href="{{ asset('adminox') }}/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="{{ asset('adminox') }}/assets/css/icons.css" rel="stylesheet" type="text/css" />
+<link href="{{ asset('adminox') }}/assets/css/style.css" rel="stylesheet" type="text/css" />
+
+<script src="{{ asset('adminox') }}/assets/js/modernizr.min.js"></script>
+
+@yield('after_styles')
+@stack('after_styles')

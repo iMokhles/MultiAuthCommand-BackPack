@@ -1,0 +1,59 @@
+@extends('{{$nameSmall}}.layouts.layout_guest')
+
+
+@section('content')
+
+    <div class="account-pages">
+        <div class="account-box">
+            <div class="account-logo-box">
+                <h2 class="text-uppercase text-center">
+                    <a href="{{url('')}}" class="logo">
+                        {{config('backpack.base.project_name')}}
+                    </a>
+                </h2>
+                <h5 class="text-uppercase font-bold m-b-5 m-t-50">{{ trans('backpack::base.reset_password') }}</h5>
+                <p class="m-b-0">{{ trans('backpack::base.reset_password') }}</p>
+            </div>
+            <div class="account-content">
+                <form class="form-horizontal" method="POST" action="{{ route('{{$nameSmall}}.password.reset') }}">
+
+                    @csrf
+
+                    <input type="hidden" name="token" value="{{ $token }}">
+
+                    <div class="form-group m-b-20 row">
+                        <div class="col-12">
+                            <label for="email">{{ trans('backpack::base.email_address') }}</label>
+                            <input type="email" class="form-control" name="email" id="email" value="{{ $email ?? old('email') }}">
+                        </div>
+                    </div>
+
+                    <div class="form-group row m-b-20">
+                        <div class="col-12">
+                            <label for="password">{{ trans('backpack::base.password') }}</label>
+                            <input type="password" class="form-control" name="password" id="password">
+                        </div>
+                    </div>
+
+                    <div class="form-group row m-b-20">
+                        <div class="col-12">
+                            <label for="password_confirmation">{{ trans('backpack::base.confirm_password') }}</label>
+                            <input type="password" class="form-control" name="password_confirmation" id="password_confirmation">
+                        </div>
+                    </div>
+
+                    <div class="form-group row text-center m-t-10">
+                        <div class="col-12">
+                            <button class="btn btn-md btn-block btn-primary waves-effect waves-light" type="submit">{{ trans('backpack::base.reset_password') }}</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end card-box-->
+
+@endsection
+
+

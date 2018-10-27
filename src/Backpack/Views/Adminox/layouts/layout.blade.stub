@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    @include('{{$nameSmall}}.inc.head')
+</head>
+
+<body>
+
+@include('{{$nameSmall}}.inc.main_header')
+
+<div class="wrapper">
+    <div class="container">
+
+        @include('{{$nameSmall}}.inc.breadcrumb')
+
+        @yield('content')
+        @stack('content')
+
+    </div>
+</div>
+
+@include('{{$nameSmall}}.inc.footer')
+
+@yield('before_scripts')
+@stack('before_scripts')
+
+@include('{{$nameSmall}}.inc.scripts')
+
+@include('{{$nameSmall}}.inc.alerts')
+
+@yield('after_scripts')
+@stack('after_scripts')
+
+</body>
+
+</html>

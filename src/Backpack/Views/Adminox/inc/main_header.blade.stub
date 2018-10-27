@@ -1,0 +1,60 @@
+@php
+    $adminNotifiactions = auth('{{$nameSmall}}')->user()->unreadNotifications()->get();
+    $adminLogged = auth('{{$nameSmall}}')->user();
+    $adminAvatar = backpack_avatar_url(auth('{{$nameSmall}}')->user());
+@endphp
+
+<!-- Navigation Bar-->
+<header id="topnav">
+    <div class="topbar-main">
+        <div class="container">
+
+            <!-- Logo container-->
+            <div class="logo">
+                <!-- Text Logo -->
+                <a href="{{url('')}}" class="logo">
+                    {{config('backpack.base.project_name')}}
+                </a>
+                <!-- Image Logo -->
+                {{--<a href="index.html" class="logo">--}}
+                    {{--<img src="assets/images/logo_dark.png" alt="" height="24" class="logo-lg">--}}
+                    {{--<img src="assets/images/logo_sm.png" alt="" height="24" class="logo-sm">--}}
+                {{--</a>--}}
+
+            </div>
+            <!-- End Logo container-->
+
+
+            <div class="menu-extras topbar-custom">
+
+                <ul class="list-inline float-right mb-0">
+
+                    <li class="menu-item list-inline-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle nav-link">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </li>
+
+                    @include('{{$nameSmall}}.inc.notifications_menu')
+
+                    @include('{{$nameSmall}}.inc.user_menu')
+
+                </ul>
+            </div>
+            <!-- end menu-extras -->
+
+            <div class="clearfix"></div>
+
+        </div> <!-- end container -->
+    </div>
+    <!-- end topbar-main -->
+
+    @include('{{$nameSmall}}.inc.sidebar')
+
+</header>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    @include('{{$nameSmall}}.inc.head')
+</head>
+
+<body class="bg-accpunt-pages">
+
+<!-- HOME -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div class="wrapper-page">
+
+                    @yield('content')
+                    @stack('content')
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@yield('before_scripts')
+@stack('before_scripts')
+
+@include('{{$nameSmall}}.inc.scripts')
+
+@yield('after_scripts')
+@stack('after_scripts')
+
+</body>
+
+</html>

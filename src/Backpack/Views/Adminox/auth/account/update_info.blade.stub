@@ -1,0 +1,63 @@
+@extends('{{$nameSmall}}.layouts.layout')
+
+@section('content')
+<div class="row">
+    <div class="col-md-4">
+        @include('{{$nameSmall}}.auth.account.sidemenu')
+    </div>
+    <div class="col-md-8">
+
+        <div class="card-box">
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#update_account_info" data-toggle="tab" aria-expanded="false" class="nav-link">
+                        {{ trans('backpack::base.update_account_info') }}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#change_account_password" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                        {{ trans('backpack::base.change_password') }}
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane fade" id="update_account_info">
+
+                    @include('{{$nameSmall}}.auth.account.account_info')
+
+                </div>
+                <div class="tab-pane fade show active" id="change_account_password">
+
+                    @include('{{$nameSmall}}.auth.account.change_password')
+
+                </div>
+
+            </div>
+
+            </div>
+    </div>
+</div>
+@endsection
+
+@section('after_scripts')
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // for tabs
+
+            // Tabs refresh stay in menu
+            // wire up shown event
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                sessionStorage.setItem('activeTab', $(e.target).attr('href'));
+            });
+            // read hash from page load and change tab
+            var activeTab = sessionStorage.getItem('activeTab');
+            if(activeTab){
+                $('.nav-tabs a[href="' + activeTab + '"]').tab('show');
+            }
+        } );
+    </script>
+@endsection
+
+

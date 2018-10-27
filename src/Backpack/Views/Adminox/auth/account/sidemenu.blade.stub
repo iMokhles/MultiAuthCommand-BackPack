@@ -1,0 +1,11 @@
+<div class="text-center card-box">
+	<div class="member-card">
+		<div class="thumb-xl member-thumb m-b-10 mx-auto">
+			<img src="{{ backpack_avatar_url(auth('{{$nameSmall}}')->user()) }}" class="rounded-circle img-thumbnail" alt="profile-image">
+		</div>
+
+		<div class="">
+			<h4 class="m-b-5 font-18">{{ auth('{{$nameSmall}}')->user()->name }}</h4>
+		</div>
+	</div>
+</div>

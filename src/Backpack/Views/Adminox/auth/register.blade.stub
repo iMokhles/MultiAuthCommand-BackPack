@@ -1,0 +1,72 @@
+@extends('{{$nameSmall}}.layouts.layout_guest')
+
+
+@section('content')
+
+    <div class="account-pages">
+        <div class="account-box">
+            <div class="account-logo-box">
+                <h2 class="text-uppercase text-center">
+                    <a href="{{url('')}}" class="logo">
+                        {{config('backpack.base.project_name')}}
+                    </a>
+                </h2>
+                <h5 class="text-uppercase font-bold m-b-5 m-t-50">{{ trans('backpack::base.register') }}</h5>
+                <p class="m-b-0">{{ trans('backpack::base.register') }} Admin account</p>
+            </div>
+            <div class="account-content">
+                <form class="form-horizontal" method="POST" action="{{ route('{{$nameSmall}}.register') }}">
+
+                    @csrf
+
+
+                    <div class="form-group m-b-20 row">
+                        <div class="col-12">
+                            <label for="name">{{ trans('backpack::base.name') }}</label>
+                            <input type="text" class="form-control" name="name" id="name" value="{{ old('name') }}">
+                        </div>
+                    </div>
+
+                    <div class="form-group m-b-20 row">
+                        <div class="col-12">
+                            <label for="{{backpack_authentication_column()}}">{{ config('backpack.base.authentication_column_name') }}</label>
+                            <input type="{{ backpack_authentication_column()=='email'?'email':'text'}}" class="form-control" name="{{ backpack_authentication_column() }}" id="{{backpack_authentication_column()}}" value="{{ old(backpack_authentication_column()) }}">
+                        </div>
+                    </div>
+
+                    <div class="form-group row m-b-20">
+                        <div class="col-12">
+                            <label for="password">{{ trans('backpack::base.password') }}</label>
+                            <input type="password" class="form-control" name="password" id="password">
+                        </div>
+                    </div>
+
+                    <div class="form-group row m-b-20">
+                        <div class="col-12">
+                            <label for="password_confirmation">{{ trans('backpack::base.confirm_password') }}</label>
+                            <input type="password" class="form-control" name="password_confirmation" id="password_confirmation">
+                        </div>
+                    </div>
+
+                    <div class="form-group row text-center m-t-10">
+                        <div class="col-12">
+                            <button class="btn btn-md btn-block btn-primary waves-effect waves-light" type="submit">{{ trans('backpack::base.register') }}</button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="row m-t-50">
+                    <div class="col-sm-12 text-center">
+                        <p class="text-muted">Already have an account? <a href="{{ route('{{$nameSmall}}.login') }}" class="text-dark m-l-5"><b>{{ trans('backpack::base.login') }}</b></a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end card-box-->
+
+@endsection
+
+

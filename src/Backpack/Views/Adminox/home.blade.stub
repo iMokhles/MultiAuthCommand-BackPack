@@ -1,0 +1,15 @@
+@extends('{{$nameSmall}}.layouts.layout')
+
+
+@section('content')
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card m-b-30">
+                <h6 class="card-header">{{ trans('backpack::base.login_status') }}</h6>
+                <div class="card-body">
+                    <p class="card-text">{{ trans('backpack::base.logged_in') }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection

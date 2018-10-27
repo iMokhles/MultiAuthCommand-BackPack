@@ -1,0 +1,22 @@
+@if (auth('{{$nameSmall}}')->check())
+
+    <div class="navbar-custom">
+        <div class="container">
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu">
+
+                    <li class="has-submenu">
+                        <a href="{{ route('{{$nameSmall}}.home') }}"><i class="fi-air-play"></i>{{ trans('backpack::base.dashboard') }}</a>
+                    </li>
+
+                    {{--<!-- ======================================= -->--}}
+
+
+                </ul>
+                <!-- End navigation menu -->
+            </div> <!-- end #navigation -->
+        </div> <!-- end container -->
+    </div> <!-- end navbar-custom -->
+
+@endif
