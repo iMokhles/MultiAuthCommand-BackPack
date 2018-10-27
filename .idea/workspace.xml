@@ -65,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="22" column="98" selection-start-line="22" selection-start-column="98" selection-end-line="22" selection-end-column="98" />
+            <state relative-caret-position="330">
+              <caret line="136" column="13" lean-forward="true" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -115,6 +115,7 @@
       <find>$sidebar_user_panelBlade</find>
       <find>installView</find>
       <find>account_infoBlade</find>
+      <find>theme_name</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -312,12 +313,12 @@
       <updated>1539077339005</updated>
       <workItem from="1539077340693" duration="3186000" />
       <workItem from="1540357390514" duration="639000" />
-      <workItem from="1540661052571" duration="12631000" />
+      <workItem from="1540661052571" duration="13035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16456000" />
+    <option name="totallyTimeSpent" value="16860000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -609,8 +610,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="22" column="98" selection-start-line="22" selection-start-column="98" selection-end-line="22" selection-end-column="98" />
+        <state relative-caret-position="330">
+          <caret line="136" column="13" lean-forward="true" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
         </state>
       </provider>
     </entry>

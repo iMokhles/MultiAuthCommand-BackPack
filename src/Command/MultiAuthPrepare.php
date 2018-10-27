@@ -77,7 +77,7 @@ class MultiAuthPrepare extends BaseCommand
             $admin_theme = 'adminlte';
         }
 
-        if (file_exists(__DIR__ . '/../Backpack/Views/'.$theme_name)) {
+        if (file_exists(__DIR__ . '/../Backpack/Views/'.$admin_theme)) {
             if ($this->isAlreadySetup() == false) {
 
                 $this->line(" installing migrations...");
@@ -137,7 +137,7 @@ class MultiAuthPrepare extends BaseCommand
             }
         } else {
             $this->progressBar->finish();
-            $this->line(" failed: ".$theme_name." theme not found");
+            $this->line(" failed: ".$admin_theme." theme not found");
             $this->progressBar->advance();
         }
 
