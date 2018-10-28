@@ -40,13 +40,25 @@ class LoginController extends Controller
 
 
     /**
+     * Return custom username for authentication.
+     *
+     * @return string
+     */
+    public function username()
+    {
+        return backpack_authentication_column();
+    }
+
+    /**
      * Show the application's login form.
      *
      * @return \Illuminate\Http\Response
      */
     public function showLoginForm()
     {
-        return view('{{$nameSmall}}.auth.login');
+        return view('{{$nameSmall}}.auth.login', [
+            'username' => $this->username()
+        ]);
     }
 
     /**

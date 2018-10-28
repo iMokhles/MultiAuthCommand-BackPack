@@ -78,7 +78,7 @@ class MultiAuthPrepare extends BaseCommand
         }
 
         if (file_exists(__DIR__ . '/../Backpack/Views/'.$admin_theme)) {
-            if ($this->isAlreadySetup() == false) {
+            if ($this->isAlreadySetup() === false) {
 
                 $this->line(" installing migrations...");
                 $this->installMigration();
@@ -330,6 +330,13 @@ class MultiAuthPrepare extends BaseCommand
             $scriptsBlade = file_get_contents(__DIR__
                 . '/../Backpack/Views/'.$theme_name.'/inc/scripts.blade.stub');
 
+            $menuBlade = null;
+            $account_infoBlade = null;
+            $authCSS = null;
+            $breadcrumbBlade = null;
+            $notifications_menuBlade = null;
+
+
             if ($theme_name == 'adminlte') {
                 $menuBlade = file_get_contents(__DIR__
                     . '/../Backpack/Views/'.$theme_name.'/inc/menu.blade.stub');
@@ -468,6 +475,7 @@ class MultiAuthPrepare extends BaseCommand
                 $nameSmall,
             ], $change_passwordBlade);
 
+            $account_infoBladeNew = null;
             if ($theme_name != 'adminlte') {
                 $account_infoBladeNew = str_replace([
                     '{{$nameSmall}}',
@@ -490,6 +498,7 @@ class MultiAuthPrepare extends BaseCommand
                 $nameSmall
             ], $main_headerBlade);
 
+            $menuBladeNew = null;
             if ($theme_name == 'adminlte') {
                 $menuBladeNew = str_replace([
                     '{{$nameSmall}}',
@@ -934,14 +943,14 @@ class MultiAuthPrepare extends BaseCommand
      * Run a SSH command.
      *
      * @param string $command      The SSH command that needs to be run
-     * @param bool   $beforeNotice Information for the user before the command is run
-     * @param bool   $afterNotice  Information for the user after the command is run
+     * @param string   $beforeNotice Information for the user before the command is run
+     * @param string   $afterNotice  Information for the user after the command is run
      *
      * @return mixed Command-line output
      */
-    public function executeProcess($command, $beforeNotice = false, $afterNotice = false)
+    public function executeProcess($command, $beforeNotice = '', $afterNotice = '')
     {
-        if ($beforeNotice) {
+        if (!is_null($beforeNotice)) {
             $this->info('### '.$beforeNotice);
         } else {
             $this->info('### Running: '.$command);
@@ -958,7 +967,7 @@ class MultiAuthPrepare extends BaseCommand
         if (!$process->isSuccessful()) {
             throw new ProcessFailedException($process);
         }
-        if ($afterNotice) {
+        if (!is_null($afterNotice)) {
             $this->info('### '.$afterNotice);
         }
     }
@@ -979,7 +988,8 @@ class MultiAuthPrepare extends BaseCommand
      */
     protected function getNameInput()
     {
-        return trim($this->argument('name'));
+        $name = $this->argument('name');
+        return trim($name);
     }
 
     /**
