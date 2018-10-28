@@ -41,6 +41,10 @@ Example usage:
 ``` bash
 php artisan make:multi-backpack Admin --admin_theme="adminox" or --admin_theme="adminlte"
 ```
+##### then
+
+* go to `config/backpack/base.php`
+* update `user_model_fqn => Admin::class`
 
 ## Security
 

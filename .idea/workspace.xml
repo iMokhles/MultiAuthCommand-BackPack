@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aab6125-e647-48c9-8846-0b8fdd0280ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/login.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/login.blade.stub" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/HomeController.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/HomeController.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,16 +27,16 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="1" />
-          <entry key="md" value="2" />
+          <entry key="md" value="3" />
           <entry key="php" value="6" />
-          <entry key="stub" value="59" />
+          <entry key="stub" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="53" />
+          <entry key="Blade" value="57" />
           <entry key="JSON" value="1" />
-          <entry key="Markdown" value="2" />
+          <entry key="Markdown" value="3" />
           <entry key="PHP" value="6" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
@@ -46,7 +44,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="35" />
-          <entry key="md" value="317" />
+          <entry key="md" value="366" />
           <entry key="php" value="775" />
           <entry key="stub" value="500" />
         </counts>
@@ -55,7 +53,7 @@
         <counts>
           <entry key="Blade" value="498" />
           <entry key="JSON" value="35" />
-          <entry key="Markdown" value="317" />
+          <entry key="Markdown" value="366" />
           <entry key="PHP" value="776" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -73,6 +71,18 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="185">
+                <caret line="48" column="11" lean-forward="true" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controllers/HomeController.stub">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,11 +92,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/login.blade.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="-176">
               <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/register.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-213">
+              <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/verify.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-551">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/passwords/reset.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="21" column="75" lean-forward="true" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/passwords/email.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="17" column="76" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -153,11 +199,11 @@
         <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/account/change_password.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/account/account_info.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/footer_guest.blade.stub" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Controllers/Auth/LoginController.stub" />
         <option value="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
         <option value="$PROJECT_DIR$/src/Controllers/HomeController.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/login.blade.stub" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -249,6 +295,16 @@
               <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
               <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Backpack" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="Adminox" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="passwords" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Command" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -311,12 +367,12 @@
       <workItem from="1540357390514" duration="639000" />
       <workItem from="1540661052571" duration="14356000" />
       <workItem from="1540685422579" duration="1100000" />
-      <workItem from="1540687153968" duration="34000" />
+      <workItem from="1540687153968" duration="182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19315000" />
+    <option name="totallyTimeSpent" value="19463000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -455,23 +511,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/verify.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Backpack/Views/AdminLTE/auth/register.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-14" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/register.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backpack/Views/AdminLTE/auth/passwords/email.blade.stub">
@@ -483,20 +525,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backpack/Views/AdminLTE/auth/passwords/reset.blade.stub">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/passwords/email.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="76" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/passwords/reset.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="75" lean-forward="true" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/head.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
@@ -575,16 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="260">
-            <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Exceptions/handlerUnauthorized.stub">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -614,8 +632,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/login.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="-176">
           <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/register.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-213">
+          <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/verify.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-551">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/passwords/reset.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="21" column="75" lean-forward="true" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/passwords/email.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="76" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="185">
+            <caret line="48" column="11" lean-forward="true" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
