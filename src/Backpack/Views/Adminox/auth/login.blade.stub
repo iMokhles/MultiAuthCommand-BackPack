@@ -22,7 +22,7 @@
 
                     <div class="form-group m-b-20 row">
                         <div class="col-12">
-                            <label for="emailaddress">{{ config('backpack.base.authentication_column_name') }}</label>
+                            <label for="{{ $username }}">{{ config('backpack.base.authentication_column_name') }}</label>
                             <input type="text" class="form-control" name="{{ $username }}" id="{{ $username }}" value="{{ old($username) }}">
                         </div>
                     </div>

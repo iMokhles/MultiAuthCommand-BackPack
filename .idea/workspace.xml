@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0aab6125-e647-48c9-8846-0b8fdd0280ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Auth/LoginController.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Auth/LoginController.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/login.blade.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/login.blade.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/HomeController.stub" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/HomeController.stub" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +19,11 @@
     <session id="591455909">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -31,12 +31,12 @@
           <entry key="json" value="1" />
           <entry key="md" value="2" />
           <entry key="php" value="6" />
-          <entry key="stub" value="57" />
+          <entry key="stub" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="51" />
+          <entry key="Blade" value="53" />
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="2" />
           <entry key="PHP" value="6" />
@@ -48,12 +48,12 @@
           <entry key="json" value="35" />
           <entry key="md" value="317" />
           <entry key="php" value="775" />
-          <entry key="stub" value="498" />
+          <entry key="stub" value="500" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="496" />
+          <entry key="Blade" value="498" />
           <entry key="JSON" value="35" />
           <entry key="Markdown" value="317" />
           <entry key="PHP" value="776" />
@@ -64,20 +64,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="251">
-              <caret line="336" column="44" lean-forward="true" selection-start-line="336" selection-start-column="44" selection-end-line="336" selection-end-column="44" />
+              <caret line="336" column="44" selection-start-line="336" selection-start-column="44" selection-end-line="336" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controllers/Auth/LoginController.stub">
+        <entry file="file://$PROJECT_DIR$/src/Controllers/HomeController.stub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+            <state relative-caret-position="375">
+              <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/login.blade.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -134,7 +143,6 @@
         <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/layouts/layout_guest.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/head.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/inc/main_header.blade.stub" />
-        <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/login.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/verify.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/passwords/email.blade.stub" />
         <option value="$PROJECT_DIR$/src/Backpack/Views/AdminLTE/auth/passwords/email.blade.stub" />
@@ -148,6 +156,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Controllers/Auth/LoginController.stub" />
         <option value="$PROJECT_DIR$/src/Command/MultiAuthPrepare.php" />
+        <option value="$PROJECT_DIR$/src/Controllers/HomeController.stub" />
+        <option value="$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/login.blade.stub" />
       </list>
     </option>
   </component>
@@ -192,6 +202,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,6 +214,36 @@
               <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
               <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Backpack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Backpack" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Backpack" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="Adminox" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MultiAuthCommand" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Backpack" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="Adminox" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MultiAuthCommand" type="b2602c69:ProjectViewProjectNode" />
@@ -227,7 +268,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,12 +310,13 @@
       <workItem from="1539077340693" duration="3186000" />
       <workItem from="1540357390514" duration="639000" />
       <workItem from="1540661052571" duration="14356000" />
-      <workItem from="1540685422579" duration="911000" />
+      <workItem from="1540685422579" duration="1100000" />
+      <workItem from="1540687153968" duration="34000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19092000" />
+    <option name="totallyTimeSpent" value="19315000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -290,7 +331,7 @@
     <frame x="52" y="23" width="1388" height="817" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26077265" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26448736" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -478,13 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/login.blade.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="92" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/account/update_info.blade.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -560,14 +594,28 @@
     <entry file="file://$PROJECT_DIR$/src/Controllers/Auth/LoginController.stub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
-          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/MultiAuthPrepare.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
-          <caret line="336" column="44" lean-forward="true" selection-start-line="336" selection-start-column="44" selection-end-line="336" selection-end-column="44" />
+          <caret line="336" column="44" selection-start-line="336" selection-start-column="44" selection-end-line="336" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controllers/HomeController.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backpack/Views/Adminox/auth/login.blade.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
         </state>
       </provider>
     </entry>

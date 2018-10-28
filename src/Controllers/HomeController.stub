@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('{{$nameSmall}}.home');
+        return view('{{$nameSmall}}.home', ['title' => 'Dashboard']);
     }
     /**
      * redirect to dashboard.
