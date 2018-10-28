@@ -431,7 +431,6 @@ class MultiAuthPrepare extends BaseCommand
 
             $homeBladeNew = str_replace([
                 '{{$nameSmall}}',
-                '{{$name}}',
 
             ], [
                 $nameSmall

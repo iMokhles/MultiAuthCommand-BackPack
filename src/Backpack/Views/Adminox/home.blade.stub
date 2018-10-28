@@ -4,9 +4,11 @@
 @section('content')
     <div class="row">
         <div class="col-md-12">
+
             <div class="card m-b-30">
                 <h6 class="card-header">{{ trans('backpack::base.login_status') }}</h6>
-                <div class="card-body">
+                <div class="card-block">
+                    <h5 class="card-title">{{auth('{{$nameSmall}}')->user()->name}}</h5>
                     <p class="card-text">{{ trans('backpack::base.logged_in') }}</p>
                 </div>
             </div>
